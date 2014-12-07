@@ -6,7 +6,7 @@ Being a personal calendar, it only contains holidays for my locality. But if any
 
 It certainly beats doing it by hand like I did a few years ago, and also is easier than doing it purely procedurally. CSS3 isn't anywhere near perfect, but it's quite good enough for what I wanted.
 
-I'm using [Shaven.js](http://adriansieber.com/shaven/) to generate the markup and the calendar generation module from [ramalho/calendar.js](https://github.com/ramalho/calendar.js) A bit hackishly done. 
+I'm using [Shaven.js](http://adriansieber.com/shaven/) to generate the markup and the calendar generation module from [ramalho/calendar.js](https://github.com/ramalho/calendar.js)
 
 The biggest problem was converting the app to a printable form. I gave up on converting the site to a pdf very quickly, and resorted to a secondary scaling stylesheet to enlarge the pages and then using Firefox' fullpage screenshot functionality ( `screenshot screenshot.png --fullpage` ) and then splitting it manually. 
 
