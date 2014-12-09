@@ -25,10 +25,11 @@ if ( getUrlParameter( 'region' ) ) { // If a holiday region is given...
 	var region = getUrlParameter( 'region' );
 }
 
+var year = 2015;
 var currentHolidays = {};
 if ( getUrlParameter( 'year' ) ) { // If a year is given, render that. Or else the current year. Also get holidays of year and region if given.
 	var year = parseInt( getUrlParameter( 'year' ) );
-	if ( isNaN( year ) || year <= 0 ) year = currentYear;
+	if ( isNaN( year ) || !year ) year = currentYear;
 	try {
 		currentHolidays = holidays[year][region];
 	} catch ( e ) {}
