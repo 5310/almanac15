@@ -1,18 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300|Open+Sans+Condensed:700);
+
 .font-number {
-	font-family: 'Montserrat Alternates';
-	font-weight: normal;
+	font-family: 'Raleway';
+	font-weight: 200;
 }
 .font-number-bold {
-	font-family: 'Montserrat Alternates';
-	font-weight: bold;
+	font-family: 'Raleway';
+	font-weight: 800;
 }
 .font-text {
   	font-family: 'Open Sans';
-	font-weight: lighter;
+	font-weight: 300;
 }
 .font-text-cond {
   	font-family: 'Open Sans Condensed';
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .text-cutout {
@@ -63,15 +66,6 @@ body {
 	
 	background: white;
 	box-shadow: 0 2mm 4mm rgba(0, 0, 0, 0.25);
-
-	.year {
-		margin: 0 1mm;
-		.font-number-bold;
-		font-size: 1.15em;
-		line-height: 1.15em;
-		letter-spacing: 0.1em;
-//		opacity: 0.25;
-	}
 	
 	.weekday-names {
 
@@ -79,7 +73,10 @@ body {
 		flex-flow: row;
 		justify-content: space-around;
 		
-		letter-spacing: 0.1em;
+
+		.font-text;
+		font-size: 4mm;
+		letter-spacing: 0.4mm;
 		text-transform: uppercase;
 		text-align: center;
 
@@ -88,9 +85,6 @@ body {
 			width: 100% / 7;
 			box-sizing: border-box;
 			padding: 1mm 0;
-
-			.font-text;
-			font-size: 4mm;
 			
 			&:nth-child(7n) {
 				font-weight: bold;
@@ -115,7 +109,7 @@ body {
 		
 		.month-name {
 			.font-text;
-			letter-spacing: 0.1em;
+			letter-spacing: 1mm;
 			text-transform: uppercase;
 			text-align: left;
 		}
@@ -123,9 +117,9 @@ body {
 		.year {
 			text-align: center;
 			.font-number-bold;
-			font-size: 1.1em;
-			line-height: 1.22em;
-			letter-spacing: 0.5em;
+			font-size: 13.5mm;
+			line-height: 12mm;
+			letter-spacing: 6mm;
 			.text-cutout;
 		}
 		
@@ -137,9 +131,7 @@ body {
 
 	}
 
-	.month-days {
-
-//			margin-top: 5mm;	
+	.month-days {	
 
 		display: flex;
 		flex-flow: row wrap;
@@ -164,7 +156,7 @@ body {
 
 				.font-number;
 				font-size: 20mm;
-				letter-spacing: -0.08em;
+				letter-spacing: -2.5mm;
 				line-height: 12mm;
 
 			}
@@ -186,7 +178,7 @@ body {
 				
   				.font-text-cond;
 				font-size: 3.5mm;
-				line-height: 0.75em;
+				line-height: 2.5mm;
 			}
 
 			&.holiday, &:nth-child(7n) {
