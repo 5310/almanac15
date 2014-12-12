@@ -33,8 +33,7 @@ holidays['2015'] = {
 			'2': "Gandhi's B'day",
 			'12': "Good Friday",
 			'20': "Mahasaptami",
-			'21': "Mahaashtami",
-			'21': "Mahanavami",
+			'21': "Mahaashtami & Mahanavami",
 			'22': "Vijaya Dashami",
 			'24': "Muharram",
 			'26': "Lakshmi Puja"
