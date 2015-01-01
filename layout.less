@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:200,800);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300|Open+Sans+Condensed:700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400|Open+Sans+Condensed:300);
 
 .font-number {
 	font-family: 'Raleway';
-	font-weight: 200;
+	font-weight: 400;
 }
 .font-number-bold {
 	font-family: 'Raleway';
@@ -11,7 +11,7 @@
 }
 .font-text {
   	font-family: 'Open Sans';
-	font-weight: 300;
+	font-weight: 400;
 }
 .font-text-cond {
   	font-family: 'Open Sans Condensed';
@@ -20,7 +20,7 @@
 
 .text-cutout {
 	color: rgba(0, 0, 0, 0.25);
-	text-shadow: 1px 4px 6px white, 0 0 0 black, 1px 4px 6px white;
+	text-shadow: 1px 4px 4px white, 0 0 0 black, 1px 4px 4px white;
 	opacity: 0.5;
 }
 
@@ -45,7 +45,8 @@ body {
 		@scale: 300/96;
 		transform: scale(@scale, @scale);
 		.page{
-			margin: 0;
+            margin: 0;
+            padding: 10mm 0mm;
 			box-shadow: none;
 			position: absolute;
 			top: 0;
@@ -60,7 +61,7 @@ body {
 	width: 210mm;
 	height: 297mm;
 	margin: 20mm;
-	padding: 20mm 5mm;
+    padding: 20mm 5mm;
 		
 	display: flex;
 	flex-flow: column;
@@ -107,7 +108,7 @@ body {
 			top: 0; bottom: 0; left: 0; right: 0;
 		}
 		
-		font-size: 10mm;
+		font-size: 9mm;
 		
 		.month-name {
 			.font-text;
@@ -119,8 +120,8 @@ body {
 		.year {
 			text-align: center;
 			.font-number-bold;
-			font-size: 13.5mm;
-			line-height: 12mm;
+			font-size: 11.5mm;
+			line-height: 11.5mm;
 			letter-spacing: 6mm;
 			.text-cutout;
 		}
@@ -146,6 +147,7 @@ body {
 			height: 15mm;
 			box-sizing: border-box;
 			margin: 3mm 0;
+            margin-bottom: 5mm;
 			
 			position: relative;
 			& > * {
@@ -158,7 +160,7 @@ body {
 
 				.font-number;
 				font-size: 20mm;
-				letter-spacing: -2.5mm;
+				letter-spacing: -1mm;
 				line-height: 12mm;
 
 			}
@@ -175,7 +177,7 @@ body {
 				justify-content: center;
 				
 				background: white; color: black; 
-				background: black; color: white; //NOTE: Invert holiday tags.
+//				background: black; color: white; //NOTE: Invert holiday tags.
 				box-shadow: 0 0 1mm rgba(0, 0, 0, 0.05), 0 0.5mm 0.5mm rgba(0, 0, 0, 0.2);
 				
   				.font-text-cond;
