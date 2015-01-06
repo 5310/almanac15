@@ -8,7 +8,7 @@ It certainly beats doing it by hand like I did a few years ago, and also is easi
 
 I'm using [Shaven.js](http://adriansieber.com/shaven/) to generate the markup and the calendar generation module from [ramalho/calendar.js](https://github.com/ramalho/calendar.js)
 
-The biggest problem was converting the app to a printable form. I gave up on converting the site to a pdf very quickly, and resorted to a secondary scaling stylesheet to enlarge the pages and then using Firefox' fullpage screenshot functionality ( `screenshot screenshot.png --fullpage` ) and then splitting it manually. 
+The biggest problem was converting the app to a printable form. I gave up on converting the site to a pdf very quickly, and resorted to a secondary scaling stylesheet to enlarge the pages and then using Firefox' fullpage screenshot functionality ( `screenshot screenshot.png --fullpage` ) and then splitting it manually.
 
 The calendar reads some URL parameters and draws accordingly:
 
@@ -23,8 +23,8 @@ Example: [5310.github.io/almanac15/index.html?year=2015&page=true&month1=0&month
 
 Compatibility notes:
 
+- To be frank, it only works and draws properly on Firefox. I don't care enough to normalize it, it's been made for print.
 - The code uses the ES6 spread operator (`...`) which, as or writing, is only implemented in Firefox. 
 	- Given how hacky it is, I can't bother to get Traceur working. It isn't when just dropped in.
-- The layout works fine in Chrome for the most part, but the holiday tags are offset for some reason. 
 
 This should do for now, personally. Maybe next year I'll just make a Polymer app which pulls holidays from Google Calendar or something and has enough modularity and stylability to last me forever! Hope that ES6 features are in all the browsers (not that it's a strict dependency or anything) and to find a feasible HTML to PDF procedure by then.
