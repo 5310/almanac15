@@ -24,7 +24,3 @@ Example: [5310.github.io/almanac15/index.html?year=2015&page=true&month1=0&month
 Compatibility notes:
 
 - To be frank, it only works and draws properly on Firefox. I don't care enough to normalize it, it's been made for print.
-- The code uses the ES6 spread operator (`...`) which, as or writing, is only implemented in Firefox. 
-	- Given how hacky it is, I can't bother to get Traceur working. It isn't when just dropped in.
-
-This should do for now, personally. Maybe next year I'll just make a Polymer app which pulls holidays from Google Calendar or something and has enough modularity and stylability to last me forever! Hope that ES6 features are in all the browsers (not that it's a strict dependency or anything) and to find a feasible HTML to PDF procedure by then.

@@ -1,5 +1,3 @@
-/*jshint esnext: true*/
-
 holidays['2015'] = {
 	'india-wb': {
 		'0': {
