@@ -24,14 +24,14 @@ holidays['2017'] = {
 			'9': "Tagore's B'day", // ~
 			'12': "Shab-e-Barat", // ~
 		},
-		'6': { // June
+		'5': { // June
 			'25': "Rathajatra",
 			'26': "Eid al-Fitr",
 		},
 		'6': { // July
 		},
 		'7': { // August
-			'14': "Rakhi Purnima",
+			'7': "Rakhi Purnima",
 			'14': "Janmashtami",
 			'15': "Independence Day", // =
 		},
